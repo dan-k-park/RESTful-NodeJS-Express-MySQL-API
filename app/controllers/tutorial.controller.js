@@ -38,7 +38,7 @@ exports.findAll = (req, res) => {
 
   Tutorial.findAll({ where: condition })
     .then(data => {
-      res.send(data):
+      res.send(data)
     })
     .catch(err => {
       res.status(500).send({
