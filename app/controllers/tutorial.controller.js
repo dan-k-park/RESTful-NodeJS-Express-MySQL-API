@@ -1,5 +1,5 @@
-const db = require("../models");
-const Tutorial = db.tutorials;
+const db = require("../config/db");
+const Tutorial = require("../models/Tutorial")
 const Op = db.Sequelize.Op
 
 // Create and Save
@@ -41,6 +41,7 @@ exports.findAll = (req, res) => {
       res.send(data)
     })
     .catch(err => {
+      console.log(err)
       res.status(500).send({
         message:
           err.message || "Some error occurred while retrieving tutorials"
