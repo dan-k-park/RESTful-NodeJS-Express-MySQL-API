@@ -9,9 +9,6 @@ db.authenticate()
 .then(() => console.log('Database connected'))
 .catch(err => console.log('Error ' + err))
 
-// db.sequelize.sync({ force: true }).then(() => {
-//   console.log("Drop and re-sync db")
-// })
 const app = express();
 
 var corsOptions = {

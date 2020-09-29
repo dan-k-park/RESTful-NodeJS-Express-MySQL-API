@@ -14,7 +14,7 @@ const Tutorial = db.define("tutorial", {
 })
 
 Tutorial.sync().then(() => {
-  console.log('Tutorials table created')
+  console.log("Tutorials table created")
 })
 
 module.exports = Tutorial
